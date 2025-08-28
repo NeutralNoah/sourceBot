@@ -12,7 +12,7 @@ print("🔨 Starting SourceBot.py")
 # 1. Configuration
 # ————————————
 #load_dotenv()
-TOKEN       = "MTQxMDQxMjU0NTA4ODY4NDA4NQ.GC4lMi.H7vcDQWZAlFk5VHPsTimh4UxGHvCWL56QYbpT8"
+TOKEN = os.getenv("DISCORD_TOKEN")
 STORE_FILE  = "sources.json"
 
 print(f"🔑 TOKEN loaded? {bool(TOKEN)}")
@@ -143,3 +143,4 @@ async def summary(ctx):
     await ctx.send(file=discord.File(chart_path))
 
 bot.run(TOKEN)
+
