@@ -12,7 +12,7 @@ print("🔨 Starting SourceBot.py")
 # 1. Configuration
 # ————————————
 #load_dotenv()
-TOKEN       = "MTQxMDQxMjU0NTA4ODY4NDA4NQ.Gs_sFR.3eu2fjivPahSxR7W_AqUS2VodErcJJgW-JgNsM"
+TOKEN       = "MTQxMDQxMjU0NTA4ODY4NDA4NQ.GC4lMi.H7vcDQWZAlFk5VHPsTimh4UxGHvCWL56QYbpT8"
 STORE_FILE  = "sources.json"
 
 print(f"🔑 TOKEN loaded? {bool(TOKEN)}")
@@ -141,4 +141,5 @@ async def summary(ctx):
     # Send
     await ctx.send(summary_text)
     await ctx.send(file=discord.File(chart_path))
+
 bot.run(TOKEN)
