@@ -7,6 +7,8 @@ from discord.ext import commands
 from bs4 import BeautifulSoup
 import matplotlib.pyplot as plt
 from dotenv import load_dotenv
+import sys
+print("Python version:", sys.version)
 
 print("🔨 Starting SourceBot.py V3.6")
 # ————————————
@@ -200,3 +202,4 @@ async def summary(ctx):
     await ctx.send(file=discord.File(chart_path))
     os.remove(chart_path)
 bot.run(TOKEN)
+
